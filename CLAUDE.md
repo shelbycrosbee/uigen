@@ -52,6 +52,8 @@ UIGen is a Next.js 15 App Router application that uses Claude AI to generate Rea
 
 ### Auth & persistence
 
+The database schema is defined in `prisma/schema.prisma`. Reference it anytime you need to understand the structure of data stored in the database.
+
 - JWT-based auth via `jose`, stored in httpOnly cookies (`src/lib/auth.ts`)
 - Prisma + SQLite (`prisma/schema.prisma`): two models — `User` and `Project`
 - `Project.messages` and `Project.data` are JSON strings (chat history + serialized VFS)
